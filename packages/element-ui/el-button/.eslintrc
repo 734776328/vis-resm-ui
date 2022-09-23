@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/essential", "@vue/prettier"],
+  "plugins": ["vue", "html", "prettier"],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-console": "off",
+    "no-debugger": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/multi-word-component-names": "off",
+    "no-mutating-props": "off",
+    "vue/no-v-html": "off",
+    "no-prototype-builtins": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      "env": {
+        "mocha": true
+      }
+    }
+  ]
+}

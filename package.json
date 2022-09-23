@@ -1,0 +1,19 @@
+{
+  "name": "vis-resm-ui",
+  "version": "1.0.0",
+  "description": "runtime es module component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shiotsukikaedesari/vis-resm-ui.git"
+  },
+  "author": "Shiotsuki_",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Shiotsukikaedesari/vis-resm-ui/issues"
+  },
+  "homepage": "https://github.com/Shiotsukikaedesari/vis-resm-ui#readme"
+}

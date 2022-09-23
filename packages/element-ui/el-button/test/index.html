@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template-vue2</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    #app {
+      position: fixed;
+      width: 70%;
+      height: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 12px rgb(245, 13, 175);
+    }
+  </style>
+  <body>
+    <h1>vis-resm-vue2-component</h1>
+    <div id="app">
+      <test-component :type="type">按钮</test-component>
+    </div>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.5.18/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@2.6.14/dist/vue.esm.browser.min.js",
+          "@vis-resm/importmap": "https://unpkg.com/@vis-resm/importmap@0.0.6"
+        }
+      }
+    </script>
+
+    <script type="module-shim">
+      import Vue from 'vue';
+      import { install } from "@vis-resm/importmap";
+      import pkg from "../package.json" assert { type: "json" };
+
+      install(pkg);
+
+
+      (async () => {
+        const {default: component} = await import('../dist/index.es.js');
+
+        Vue.component('test-component', component);
+
+        const app = new Vue({
+          el: '#app',
+          data() {
+            return {
+              type: 'success'
+            }
+          }
+        })
+
+        window.app = app;
+      })();
+    </script>
+  </body>
+</html>
