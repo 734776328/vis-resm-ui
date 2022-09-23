@@ -60,5 +60,6 @@ vis 运行时 esm 组件库
 
 ## 贡献者
 
-<!-- readme: collaborators,contributors -start -->
-<!-- readme: collaborators,contributors -end -->
+<a href="https://github.com/Shiotsukikaedesari/vis-resm-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Shiotsukikaedesari/vis-resm-ui" />
+</a>
