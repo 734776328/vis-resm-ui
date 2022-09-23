@@ -68,7 +68,7 @@ export const install = (
       );
       mapReference[
         dependencyScope
-      ] = `https://unpkg.com/${dependency}@${version}`;
+      ] = `https://unpkg.com/${dependency}@${version}?module`;
     }
 
     imports[importmapScope] = mapReference[dependencyScope];
