@@ -34,23 +34,31 @@ vis 运行时 esm 组件库
 
 ### 相关仓库
 
+#### create-vis-resm
+
 <p>
-  <p>create-vis-resm</p>
   <img alt="license" src="https://img.shields.io/npm/l/create-vis-resm?color=blue">
   <img alt="version" src="https://img.shields.io/npm/v/create-vis-resm?color=light">
   <img alt="downloads" src="https://img.shields.io/npm/dt/create-vis-resm">
 </p>
 
+#### @vis-resm/cli
+
 <p>
-  <p>@vis-resm/cli</p>
   <img alt="license" src="https://img.shields.io/npm/l/@vis-resm/cli?color=blue">
   <img alt="version" src="https://img.shields.io/npm/v/@vis-resm/cli?color=light">
   <img alt="downloads" src="https://img.shields.io/npm/dt/@vis-resm/cli">
 </p>
 
+#### @vis-resm/importmap
+
 <p>
-  <p>@vis-resm/importmap</p>
   <img alt="license" src="https://img.shields.io/npm/l/@vis-resm/importmap?color=blue">
   <img alt="version" src="https://img.shields.io/npm/v/@vis-resm/importmap?color=light">
   <img alt="downloads" src="https://img.shields.io/npm/dt/@vis-resm/importmap">
 </p>
+
+## 贡献者
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->

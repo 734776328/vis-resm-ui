@@ -111,9 +111,3 @@ install(pkg, "custom", {
 本库是配合`es-module-shims`库使用的：[https://github.com/guybedford/es-module-shims](https://github.com/guybedford/es-module-shims)
 
 > 由于目前 WICG 的 importmap 有部分功能还不完善，es-module-shims 过渡 importmap 比较方便：[https://github.com/WICG/import-maps](https://github.com/WICG/import-maps)
-
-## 贡献者
-
-<a href="https://github.com/Shiotsukikaedesari/vis-resm-ui/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Shiotsukikaedesari/vis-resm-ui" />
-</a>
