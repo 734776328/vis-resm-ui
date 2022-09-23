@@ -10,11 +10,64 @@ resm 运行时 importmap 管理工具。
 
 ### 一般使用
 
+```json
+// package.json
+{
+  "name": "@examples/demo1",
+  "version": "1.0.0",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "style-inject": "0.3.0"
+  },
+  "external": []
+}
+```
+
 ```js
 import { install } from "@vis-resm/importmap";
 import pkg from "xxx/package.json";
 
 install(pkg);
+```
+
+最后会自动在浏览器插入以下`importmap`
+
+```html
+<script type="importmap-shim">
+  {
+    "imports": {
+      "@examples/demo1@1.0.0/vue": "https://unpkg.com/vue@2.6.14/dist/vue.esm.browser.min.js",
+      "@examples/demo1@1.0.0/style-inject": "https://unpkg.com/style-inject@0.3.0/dist/style-inject.es.js",
+    }
+  }
+</script>
+```
+
+### 使用 external
+
+有些情况下我们不想将`dependencies`的依赖全部生成 map，我们可以通过`external`字段指定。
+
+```json
+// package.json
+{
+  "name": "@examples/demo1",
+  "version": "1.0.0",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "style-inject": "0.3.0"
+  },
+  "external": ["vue"]
+}
+```
+
+```html
+<script type="importmap-shim">
+  {
+    "imports": {
+      "@examples/demo1@1.0.0/vue": "https://unpkg.com/vue@2.6.14/dist/vue.esm.browser.min.js"
+    }
+  }
+</script>
 ```
 
 ### 指定 url 库
